@@ -1,0 +1,7 @@
+[production]
+> 0.2%
+last 10 versions
+
+[development]
+> 2%
+last 2 versions
