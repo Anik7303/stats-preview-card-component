@@ -1,0 +1,32 @@
+::selection {
+    color: $color-dark-blue;
+    background-color: $color-white;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color-dark-blue;
+    color: $color-white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: $font-size-default;
+    font-weight: $font-weight-default;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

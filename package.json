@@ -1,0 +1,32 @@
+{
+    "name": "stats-preview-card-component",
+    "description": "Frontend Masters | Challenge | Stats Preview Card Component",
+    "version": "1.0.0",
+    "scripts": {
+        "scss:compile": "node-sass scss/index.scss css/style.comp.css",
+        "css:process": "postcss css/style.comp.css --output css/style.css",
+        "build": "run-s scss:compile css:process",
+        "scss:watch": "node-sass scss/index.scss css/style.css --watch --source-map=true",
+        "server": "live-server --port 3000 --no-browser --verbose",
+        "start": "run-p server scss:watch"
+    },
+    "keywords": [
+        "sass",
+        "css"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Anik7303/stats-preview-card-component"
+    },
+    "author": "Anik Mohammad <anik7303@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "autoprefixer": "^10.2.6",
+        "cssnano": "^5.0.5",
+        "live-server": "^1.2.1",
+        "node-sass": "^6.0.0",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.3.0",
+        "postcss-cli": "^8.3.1"
+    }
+}
