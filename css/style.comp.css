@@ -1,0 +1,48 @@
+::selection {
+  color: #090b1a;
+  background-color: white; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-color: #090b1a;
+  color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.stats {
+  background-color: #1b1938;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 3rem;
+  width: calc(100% - 4rem);
+  max-width: 110rem;
+  margin: 0 2.5rem; }
+  .stats__image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    grid-column: 1;
+    grid-row: 1; }
+  .stats__detail {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 4rem; }

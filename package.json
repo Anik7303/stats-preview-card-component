@@ -7,7 +7,7 @@
         "css:process": "postcss css/style.comp.css --output css/style.css",
         "build": "run-s scss:compile css:process",
         "scss:watch": "node-sass scss/index.scss css/style.css --watch --source-map=true",
-        "server": "live-server --port 3000 --no-browser --verbose",
+        "server": "live-server --port=3000 --no-browser --verbose",
         "start": "run-p server scss:watch"
     },
     "keywords": [

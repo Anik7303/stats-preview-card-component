@@ -1,0 +1,32 @@
+.stats {
+    background-color: $color-blue;
+
+    border-radius: 1rem;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    width: calc(100% - 4rem);
+    max-width: 110rem;
+
+    margin: 0 2.5rem;
+
+    &__image {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    &__detail {
+        grid-column: 1;
+        grid-row: 2;
+
+        text-align: center;
+        margin-top: 3.5rem;
+    }
+}
